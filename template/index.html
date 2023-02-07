@@ -3,24 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>Finance Summarizer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
   </head>
-  <body>
+  <body class="align-items-center" style="height: 100vh; font-family: 'Helvetica Neue', Arial, sans-serif;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+      <a class="navbar-brand" href="/">Finance Summarizer</a>
+      <div>
+        <a href="/" class="btn btn-secondary">Back</a>
+        <a href="javascript:shutdown()" class="btn btn-danger">Shutdown</a>
+      </div>
+    </nav>
     <div class="container">
-      <h1>Welcome to the Finance Summarizer App</h1>
-      <div class="cards-container">
-        <div class="card">
-          <img src="placeholder.jpg" alt="expenses_per_category_pie">
-          <a href="expenses_per_category_pie">Expenses per Category (Pie)</a>
+      <div class="d-flex justify-content-center">
+        <div class="card m-3" style="width: 300px;">
+          <img class="card-img-top" src="placeholder.jpg" alt="Plot 1">
+          <div class="card-body">
+            <a class="btn btn-primary btn-block" href="plot1.html">Plot 1</a>
+          </div>
         </div>
-        <div class="card">
-          <img src="placeholder.jpg" alt="Plot 2">
-          <a href="plot2.html">Plot 2</a>
+        <div class="card m-3" style="width: 300px;">
+          <img class="card-img-top" src="placeholder.jpg" alt="Plot 2">
+          <div class="card-body">
+            <a class="btn btn-primary btn-block" href="plot2.html">Plot 2</a>
+          </div>
         </div>
-        <div class="card">
-          <img src="placeholder.jpg" alt="Plot 3">
-          <a href="plot3.html">Plot 3</a>
+        <div class="card m-3" style="width: 300px;">
+          <img class="card-img-top" src="placeholder.jpg" alt="Plot 3">
+          <div class="card-body">
+            <a class="btn btn-primary btn-block" href="plot3.html">Plot 3</a>
+          </div>
         </div>
       </div>
     </div>
