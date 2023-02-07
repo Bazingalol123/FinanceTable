@@ -21,3 +21,8 @@ i.material-symbols-outlined {
     background-color: #333;
     border-radius: 10px;
 }
+
+#chart {
+    width: 70%;
+    height: 70%;
+}
