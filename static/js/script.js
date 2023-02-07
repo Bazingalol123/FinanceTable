@@ -3,3 +3,11 @@ function shutdown() {
         window.close();
     }
 }
+
+function refresh() {
+    location.reload();
+}
+
+function back() {
+    history.back();
+}

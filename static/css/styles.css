@@ -1,0 +1,25 @@
+.navbar {
+    position: relative;
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px !important;
+}
+
+.material-symbols-outlined {
+    color: white;
+    text-decoration: none;
+}
+
+a.material-symbols-outlined {
+    outline: 0 !important;
+}
+
+.nav-link:hover {
+    background-color: #333;
+    border-radius: 10px;
+}

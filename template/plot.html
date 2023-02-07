@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand align-items-center mx-auto" href="/">Finance Summarizer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-link">
+              <i class="btn material-symbols-outlined" onclick="refresh()">refresh</i>
+          </li>
+          <li class="nav-item nav-link">
+              <i class="btn material-symbols-outlined" onclick="back()">arrow_back</i>
+          </li>
+          <li class="nav-item nav-link">
+              <i class="btn material-symbols-outlined" onclick="shutdown()">power_settings_new</i>
+          </li>
+    </div>
+  </nav>
+  <h1>{{plotname}}</h1>
+  <div id='chart' class='chart'”></div>
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
