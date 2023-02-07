@@ -4,19 +4,17 @@
 }
 
 .navbar-brand {
+    font-size: 36px;
     font-family: 'Courgette', cursive;
     position: absolute;
     left: 50%;
-    margin-left: -100px !important;
+    margin-left: -150px !important;
 }
 
-.material-symbols-outlined {
+i.material-symbols-outlined {
+    font-size: 36px;
     color: white;
     text-decoration: none;
-}
-
-a.material-symbols-outlined {
-    outline: 0 !important;
 }
 
 .nav-link:hover {
