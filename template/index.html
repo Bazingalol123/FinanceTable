@@ -17,9 +17,9 @@
     <div class="container">
       <div class="d-flex justify-content-center">
         <div class="card m-3" style="width: 300px;">
-          <img class="card-img-top" src="placeholder.jpg" alt="Plot 1">
+          <img class="card-img-top" src="{{ url_for('static', filename='images/exp_per_cat_pie.png') }}" alt="Expenses per category (Pie)">
           <div class="card-body">
-            <a class="btn btn-primary btn-block" href="plot1.html">Plot 1</a>
+            <a class="btn btn-primary btn-block" href="/expenses_per_category_pie">Expenses per Category (Pie)</a>
           </div>
         </div>
         <div class="card m-3" style="width: 300px;">
