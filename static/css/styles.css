@@ -33,6 +33,6 @@ img.card-img-top {
 
 #chart {
     display: flex;
-    flex: 1;
+    width: 100%;
     justify-content: center;
 }
