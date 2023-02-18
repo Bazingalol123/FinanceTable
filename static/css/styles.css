@@ -30,3 +30,9 @@ i.material-symbols-outlined {
 img.card-img-top {
     height:80%;
 }
+
+#chart {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
