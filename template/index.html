@@ -37,17 +37,37 @@
           </div>
         </div>
         <div class="card m-3" style="width: 300px;">
-          <img class="card-img-top" src="{{ url_for('static', filename='images/month_balance.png') }}" alt="Monthly balance (Bar)">
+          <img class="card-img-top" src="{{ url_for('static', filename='images/month_balance_pie.png') }}" alt="Monthly balance (Bar)">
           <div class="card-body">
-            <a class="btn btn-primary btn-block" href="/monthly_balance_bar">Monthly balance (Bar)</a>
+            <a class="btn btn-primary btn-block" href="/monthly_balance_bar">Monthly Balance (Bar)</a>
           </div>
         </div>
         <div class="card m-3" style="width: 300px;">
-          <img class="card-img-top" src="placeholder.jpg" alt="Plot 3">
+          <img class="card-img-top" src="{{ url_for('static', filename='images/month_balance_bar.png') }}" alt="Monthly balance (Line)">
           <div class="card-body">
-            <a class="btn btn-primary btn-block" href="plot3.html">Plot 3</a>
+            <a class="btn btn-primary btn-block" href="/monthly_balance_line">Monthly Balance (Line)</a>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center">
+          <div class="card m-3" style="width: 300px;">
+            <img class="card-img-top" src="{{ url_for('static', filename='images/exp_per_cat_bar.png') }}" alt="Expenses per category (Bar)">
+            <div class="card-body">
+              <a class="btn btn-primary btn-block" href="/expenses_per_category_bar">Expenses per Category (Bar)</a>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 300px;">
+            <img class="card-img-top" src="{{ url_for('static', filename='images/month_balance_bar.png') }}" alt="Monthly balance (Bar)">
+            <div class="card-body">
+              <a class="btn btn-primary btn-block" href="/monthly_balance_bar">Monthly Balance (Bar)</a>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 300px;">
+            <img class="card-img-top" src="placeholder.jpg" alt="Monthly balance (Line)">
+            <div class="card-body">
+              <a class="btn btn-primary btn-block" href="/monthly_balance_line">Monthly Balance (Line)</a>
+            </div>
+          </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
