@@ -36,3 +36,8 @@ img.card-img-top {
     width: 100%;
     justify-content: center;
 }
+
+.btn-block {
+    background-color: #454545;
+    border-color: #454545;
+}
