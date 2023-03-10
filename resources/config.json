@@ -1,0 +1,10 @@
+{
+	"git_repo_name": "<NAME_OF_YOUR_GIT_REPOSITORY>",
+	"git_repo_url": "<YOUR_GIT_REPOSITORY_URL>",
+	"wks_name": "<NAME_OF_YOUR_WORKSHEET> (for example: Income-Outcome)",
+	"index_col": "<NAME_OF_THE_INDEX_COLUMN> (for exmaple: Month)",
+	"year_total_col_name": "<NAME_OF_THE_YEAR_TOTAL_COLUMN_NAME> (for example: Year Total)",
+	"ngrok_auth_token": "<YOUR_NGROK_AUTH_TOKEN>",
+	"current_year": "<CURRENT_YEAR_AS_NUMBER>",
+	"currency": "<CURRENCY_SYMBOL_AS_STRING> (for example: $)"
+}
