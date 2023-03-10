@@ -3,6 +3,13 @@ Welcome to the finance summarizer project. The project was created to help you v
 ----
 The need for this project (and also, the main use case it's aimed for) was raised during my weekly house economy summary process. I wanted to be able to visually display my data in a dynamic way (filtering, aggregating, etc.), without being tied to Excel/Google Sheets visualization tools. As a software developer with some basic experience in the data field (using Python and its amazing data tools), I found the code approach much more fun and intuitive for me over the Google Sheets approach. So I thought - if I have a Google Sheet with the same format which I fill every week and then just use this template every year, I can build a simple Flask web app which can parse this data and write my own custom visualization functions using Python's great library Plotly to create interactive plots!
 
+Some plots you can find out-of-the-box include:
+1. <ins>Expenses per Category (Pie)</ins> - A pie chart to summarize your expenses by category. You can multi-select categories to include/exclude from the pie calculation, and also select a month to display or just see the whole year summary!
+2. <ins>Monthly Balance (Chart)</ins> - A stacked bar chart to view your expenses and incomes balance. You can use this chart to also see a bar chart of just the expenses or just the incomes!
+3. <ins>Montly balance (Line)</ins> - Prefer to see your monthly balance on a timeline? this chart lets you do just that. Same as in the bar chart, here you can also select to display only the expenses or the incomes.
+4. <ins>Expenses per Category (Bar)</ins> - Another way of displaying the expenses per category summary. This chart show the expenses for each category in a stacked bar for each month. This is helpful if for example you'd like to compare expense patterns between different months!
+5. <ins>Expense Tracker (Line)</ins> - This chart lets you track the expenses for multiple (or a single) categories over time.
+
 If you have basic experience in Python and Plotly, or you'd like to gain some hands on experience with it, all you have to do is:
 
 1. Clone this repository
