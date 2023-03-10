@@ -26,7 +26,7 @@
   {% if plotname == 'Expenses per Category (Pie)' %}
   <select>
     {% for month in monthList %}
-      <option selected="{{selectedMonth == month}}">{{month}}</option>
+      <option {% if selectedMonth == month %} selected {% endif %}>{{month}}</option>
     {% endfor %}
   </select>
   {% endif %}
