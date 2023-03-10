@@ -24,17 +24,15 @@
     </div>
   </nav>
   {% if plotname == 'Expenses per Category (Pie)' %}
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center" style="margin-top: 10px;">
     <form action="/expenses_per_category_pie" method="GET">
       <div class="row">
-        <div class="col-10">
-          <select name="month">
-            {% for month in monthList %}
-              <option {% if selectedMonth == month %} selected {% endif %}>{{month}}</option>
-            {% endfor %}
-          </select>
-        </div>
-        <div class="col-2">
+        <select name="month">
+          {% for month in monthList %}
+            <option {% if selectedMonth == month %} selected {% endif %}>{{month}}</option>
+          {% endfor %}
+        </select>
+        <div style="padding-left: 5px;">
           <button type="submit" class="btn btn-primary btn-block">Select</button>
         </div>
       </div>
